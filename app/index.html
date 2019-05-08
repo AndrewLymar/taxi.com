@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+	<header class="header">
+		<nav class="menu header__menu flex-row jc-center">
+			<div class="container flex-row jc-between">
+				<a href="" class="logo menu__logo">
+					<h1 class="logo__top">
+						Cab<span>Hub</span>
+					</h1>
+					<div class="logo__bottom">
+						Call and Relex
+					</div>
+				</a>
+				<ul class="menu__list flex-row ai-center">
+					<li class="menu__item menu__item--active">
+						<a class="menu__link" href="#header">Home</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#about">About</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#expertise">Features</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#team">Blog</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#works">Order Now</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#reviews">Contacts</a>
+					</li>
+				</ul>
+				<!--
+				<svg width="32" height="32" fill="#fff" class="menu__icon">
+					<use xlink:href="img/sprite.svg#menu"></use>
+				</svg>
+				-->
+			</div>
+		</nav>
+		<div class="banner flex-col ai-center">
+			<h2 class="banner__title">Book Cab Now</h2>
+			<div class="banner__telephone">+123 4567 8900</div>
+			<div class="banner__domain">www.bookcabnow.com</div>
+			<img class="banner__img" src="img/main-car.png" alt="car">
+		</div>
+	</header>
+	<section class="s-book-now">
+		<div class="container flex-row jc-between">
+			<div class="about">
+				<div class="about__text">
+					<div class="about__slogan">Best in city</div>
+					<h2 class="about__title">Trusted cab servies in new york</h2>
+					<p class="about__description">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur dapibus pulvinar, sapien eros sodales ante, euismod aliquet nulla metus a mauris.Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur dapibus pulvinar, sapien eros sodales ante, euismod aliquet nulla metus a mauris.</p>
+					<button class="button button--dark about__button">Read More</button>
+				</div>
+			</div>
+			<div class="book">
+				<h2 class="book__title">Book a <span>Cab</span></h2>
+				<form class="book__form" action="">
+					<div class="book__inner flex-row jc-between">
+						<input type="text" class="book__input col-5" name="name" required="required" pattern="^[А-Яа-яЁёa-zA-ZА-ЯІЇЄҐа-яіїєґ\s]+$" placeholder="Name">
+						<input type="text" class="book__input col-5" name="phone" required="required" pattern="^((8|0|\+\d{1,2})[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="Phone">
+					</div>
+					<div class="book__inner flex-row jc-between">
+						<input type="text" class="book__input col-5" name="when" required="required" pattern="^(0[0-9]|1[0-9]|2[0-3]|[0-9]):[0-5][0-9]$" placeholder="When">
+						<input type="text" class="book__input col-5" name="time" required="required" pattern="^(0[0-9]|1[0-9]|2[0-3]|[0-9]):[0-5][0-9]$" placeholder="Time">
+					</div>
+					<div class="book__inner flex-row jc-between">
+						<input type="text" class="book__input col-5" name="start" required="required" placeholder="Start">
+						<input type="text" class="book__input col-5" name="end" required="required" placeholder="End">
+					</div>
+					<div class="book__inner">
+						<input type="text" class="book__input" name="vehicle" required="required" placeholder="Choose Vehicle">
+					</div>
+					<button type="submit" class="button button--dark button--big book__button">Submit</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/scripts.min.js"></script>
+</body>
+
+</html>
