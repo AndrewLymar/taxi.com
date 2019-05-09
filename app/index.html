@@ -48,17 +48,19 @@
 				-->
 			</div>
 		</nav>
-		<div class="banner flex-col ai-center">
-			<h2 class="banner__title">Book Cab Now</h2>
-			<div class="banner__telephone">+123 4567 8900</div>
-			<div class="banner__domain">www.bookcabnow.com</div>
-			<img class="banner__img" src="img/main-car.png" alt="car">
+		<div class="container">
+			<div class="banner flex-col ai-center">
+				<h2 class="banner__title">Book Cab Now</h2>
+				<div class="banner__telephone">+123 4567 8900</div>
+				<div class="banner__domain ta-center-sm">www.bookcabnow.com</div>
+				<img class="banner__img" src="img/main-car.png" alt="taxi">
+			</div>
 		</div>
 	</header>
 	<section class="s-book-now">
-		<div class="container flex-row jc-between">
+		<div class="container flex-row jc-between jc-center-lg gap-full">
 			<div class="about">
-				<div class="about__text">
+				<div class="about__text ta-center-lg">
 					<div class="about__slogan">Best in city</div>
 					<h2 class="about__title">Trusted cab servies in new york</h2>
 					<p class="about__description">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur dapibus pulvinar, sapien eros sodales ante, euismod aliquet nulla metus a mauris.Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur dapibus pulvinar, sapien eros sodales ante, euismod aliquet nulla metus a mauris.</p>
@@ -66,7 +68,7 @@
 				</div>
 			</div>
 			<div class="book">
-				<h2 class="book__title">Book a <span>Cab</span></h2>
+				<h2 class="book__title ta-center-lg">Book a <span>Cab</span></h2>
 				<form class="book__form" action="">
 					<div class="book__inner flex-row jc-between">
 						<input type="text" class="book__input col-5" name="name" required="required" pattern="^[А-Яа-яЁёa-zA-ZА-ЯІЇЄҐа-яіїєґ\s]+$" placeholder="Name">
@@ -81,10 +83,107 @@
 						<input type="text" class="book__input col-5" name="end" required="required" placeholder="End">
 					</div>
 					<div class="book__inner">
-						<input type="text" class="book__input" name="vehicle" required="required" placeholder="Choose Vehicle">
+						<input type="text" class="book__input book__input--long" name="venicle" required="required" placeholder="Choose Venicle">
 					</div>
 					<button type="submit" class="button button--dark button--big book__button">Submit</button>
 				</form>
+			</div>
+		</div>
+	</section>
+	<section class="s-tariffs">
+		<div class="container flex-col jc-center ta-center">
+			<div class="section-text">
+				<div class="section-text__subtitle section-text__subtitle--light">Our</div>
+				<h2 class="section-text__title section-text__subtitle--dark">Tariffs</h2>
+			</div>
+			<div class="tariff-cards flex-row flex-col-lg jc-between ai-center-lg gap-full">
+				<div class="card flex-row jc-center">
+					<div class="card__img">
+						<img src="img/card-car.png" alt="taxi">
+					</div>
+					<div class="card__text">
+						<div class="card__title">Economy Class</div>
+						<div class="card__description">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</div>
+						<div class="card__cost">$1,5/mi</div>
+					</div>
+					<button class="button button--light card__button">Read More </button>
+				</div>
+				<div class="card card--active flex-row jc-center">
+					<div class="card__img">
+						<img src="img/card-car.png" alt="taxi">
+					</div>
+					<div class="card__text">
+						<div class="card__title">Standard Class</div>
+						<div class="card__description">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</div>
+						<div class="card__cost">$1,5/mi</div>
+					</div>
+					<button class="button button--dark card__button">Read More </button>
+				</div>
+				<div class="card flex-row jc-center">
+					<div class="card__img">
+						<img src="img/card-car.png" alt="taxi">
+					</div>
+					<div class="card__text">
+						<div class="card__title">Business Class</div>
+						<div class="card__description">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</div>
+						<div class="card__cost">$1,5/mi</div>
+					</div>
+					<button class="button button--light card__button">Read More </button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="s-features">
+		<div class="container flex-col jc-center">
+			<div class="section-text ta-center">
+				<div class="section-text__subtitle section-text__subtitle--light">Our</div>
+				<h2 class="section-text__title section-text__title--light">Tariffs</h2>
+			</div>
+			<div class="features flex-row jc-between jc-center-lg gap-full">
+				<div class="feature flex-row">
+					<div class="feature__img flex-row centered">
+						<svg width="28" height="27" fill="#161616">
+								<use xlink:href="img/sprite.svg#star-solid"></use>
+						</svg>
+					</div>
+					<div class="feature__text ta-center-sm">
+						<h3 class="feature__title">Home Pickup</h3>
+						<p class="feature__description">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p>
+					</div>
+				</div>
+				<div class="feature flex-row">
+					<div class="feature__img flex-row centered">
+						<svg width="26" height="31" fill="#161616">
+								<use xlink:href="img/sprite.svg#hourglass-end-solid"></use>
+						</svg>
+					</div>
+					<div class="feature__text ta-center-sm">
+						<h3 class="feature__title">Fast booking</h3>
+						<p class="feature__description">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p>
+					</div>
+				</div>
+				<div class="feature flex-row">
+					<div class="feature__img flex-row centered">
+						<svg width="28" height="31" fill="#161616">
+								<use xlink:href="img/sprite.svg#fort-awesome-brands"></use>
+						</svg>
+					</div>
+					<div class="feature__text ta-center-sm">
+						<h3 class="feature__title">Bonuses for ride</h3>
+						<p class="feature__description">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p>
+					</div>
+				</div>
+				<div class="feature flex-row">
+					<div class="feature__img flex-row centered">
+						<svg width="26" height="26" fill="#161616">
+								<use xlink:href="img/sprite.svg#cog-solid"></use>
+						</svg>
+					</div>
+					<div class="feature__text ta-center-sm">
+						<h3 class="feature__title">GPS searching</h3>
+						<p class="feature__description">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
