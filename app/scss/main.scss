@@ -76,7 +76,7 @@ section {
 	padding-top: 75px;
 	padding-bottom: 430px;
 	font-family: 'Lato', sans-serif;
-	background: url(../img/header-bg.png) no-repeat;
+	background: url("../img/header-bg.png") no-repeat;
 	background-size: cover;
 	@media only screen and (max-width: $sm) {
 		padding-bottom: 75px;
@@ -114,7 +114,7 @@ section {
 
 .logo {
 	letter-spacing: 0.54px;
-	line-height: 1.2em;
+	line-height: 19px;
 	text-decoration: none;
 	color: #fff;
 	&__top {
@@ -129,8 +129,7 @@ section {
 		margin-top: 10px;
 		font-size: 14px;
 		font-weight: 700;
-		line-height: 1rem;
-		letter-spacing: 0.15rem;
+		letter-spacing: 2.4px;
 		text-transform: uppercase;
 	}
 }
@@ -146,7 +145,7 @@ section {
 		font-family: 'Lato', sans-serif;
 		font-size: 32px;
 		font-weight: 900;
-		line-height: 1.8rem;
+		line-height: 45px;
 		text-transform: uppercase;
 		color: #ffc61a;
 	}
@@ -155,15 +154,14 @@ section {
 		font-family: 'Lato', sans-serif;
 		font-size: 68px;
 		font-weight: 900;
-		line-height: 3.8rem;
+		line-height: 60px;
 		color: #fff;
 		@media only screen and (max-width: $md) {
 			font-size: 36px;
-			letter-spacing: 0.1em;
+			letter-spacing: 3px;
 		}
 		@media only screen and (max-width: $sm) {
 			font-size: 30px;
-			letter-spacing: 0.1em;
 		}
 	}
 	&__domain {
@@ -171,16 +169,15 @@ section {
 		font-family: 'Montserrat', sans-serif;
 		font-size: 18px;
 		font-weight: 400;
-		line-height: 1.4rem;
-		letter-spacing: 1.36rem;
+		line-height: 25px;
+		letter-spacing: 24.5px;
 		text-transform: uppercase;
 		color: #fff;
 		@media only screen and (max-width: $md) {
-			letter-spacing: 0.4em;
+			letter-spacing: 6px;
 		}
 		@media only screen and (max-width: $sm) {
 			font-size: 14px;
-			letter-spacing: 0.4em;
 		}
 	}
 	&__img {
@@ -216,14 +213,14 @@ section {
 		margin-top: 10px;
 		font-size: 50px;
 		font-weight: 900;
-		line-height: 1.2em;
+		line-height: 60px;
 		text-transform: uppercase;
 		color: #101010;
 	}
 	&__description {
 		font-size: 18px;
 		font-weight: 400;
-		line-height: 1.3em;
+		line-height: 23px;
 		color: #101010;
 	}
 	&__button {
@@ -335,7 +332,7 @@ section {
 		margin-top: 30px;
 		font-size: 18px;
 		font-weight: 400;
-		line-height: 1.2em;
+		line-height: 21px;
 		color: #101010;
 	}
 	&__cost {
@@ -357,7 +354,7 @@ section {
 }
 
 .s-features {
-	background: url(../img/features-bg.jpg) no-repeat;
+	background: url("../img/features-bg.jpg") no-repeat;
 	background-size: cover;
 }
 
@@ -383,6 +380,7 @@ section {
 	&__title {
 		font-size: 25px;
 		font-weight: 700;
+		line-height: 22px;
 		text-transform: uppercase;
 		color: #ffc61a;
 	}
@@ -390,5 +388,143 @@ section {
 		font-size: 18px;
 		font-weight: 400;
 		color: #fff;
+	}
+}
+
+.s-download {
+	padding-bottom: 0;
+}
+
+.service {
+	position: relative;
+	&__download {
+		margin-top: 100px;
+	}
+	&__sample {
+		position: relative;
+		top: 8px;
+		margin-top: 70px;
+		height: auto;
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.download {
+	flex-basis: 450px;
+	&__text {
+		font-family: 'Lato', sans-serif;
+	}
+	&__title {
+		font-size: 25px;
+		font-weight: 900;
+		line-height: 28px;
+		color: #000000;
+	}
+	&__description {
+		margin-top: 28px;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 24px;
+		color: #101010;
+	}
+	&__images {
+		margin-top: 67px;
+	}
+}
+
+.s-reviews {
+	background: url("../img/reviews-bg.jpg") no-repeat;
+	background-size: cover;
+}
+
+.s-call {
+	background-color: #ffc61a;
+}
+
+.call {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #000000;
+	&__slogan {
+		font-size: 35px;
+	}
+	&__telephone {
+		font-size: 77px;
+	}
+}
+
+.footer {
+	padding-top: 75px;
+	padding-bottom: 15px;
+	background: #0d0900;
+}
+
+.footer-block {
+	flex-basis: 340px;
+	&__title {
+		margin-bottom: 38px;
+		font-family: 'Lato', sans-serif;
+		font-size: 25px;
+		font-weight: 900;
+		text-transform: uppercase;
+		color: #fff;
+	}
+	&__divider {
+		width: 100%;
+		height: 8px;
+		background-color: #ffc61a;
+	}
+	&__description {
+		margin-top: 46px;
+		font-size: 18px;
+		font-weight: 400;
+		color: #fff;
+	}
+	&__socials {
+		margin-top: 40px;
+	}
+	&__social {
+		margin-right: 22px;
+		&:hover {
+			svg {
+				fill: #fff;
+			}
+		}
+	}
+	&__downloads {
+		align-self: flex-start;
+		margin-top: 35px;
+	}
+	&__download {
+		flex: 0 0 auto;
+		margin-top: 15px;
+	}
+	&__download-link {
+		margin-right: 30px;
+		font-family: 'Lato', sans-serif;
+		font-size: 20px;
+		text-decoration: none;
+		color: #ffc61a;
+	}
+}
+
+.contacts {
+	margin-top: 47px;
+	&__item {
+		margin-top: 40px;
+		font-family: 'Times New Roman PSMT', serif;
+		font-size: 18px;
+		font-weight: 400;
+		color: #fff;
+	}
+	&__img {
+		width: 18px;
+		margin-right: 25px;
+	}
+	&__text {
+		word-break: break-all;
 	}
 }
