@@ -51,7 +51,10 @@ section {
 	&__title {
 		font-size: 44px;
 		font-weight: 900;
-		line-height: 1.1em;
+		line-height: 1.2em;
+		@media only screen and (max-width: $sm) {
+			font-size: 35px;
+		}
 		&--light {
 			color: #fff;
 		}
@@ -62,7 +65,10 @@ section {
 	&__subtitle {
 		font-size: 35px;
 		font-weight: 900;
-		line-height: 1.1em;
+		line-height: 1.2em;
+		@media only screen and (max-width: $sm) {
+			font-size: 35px;
+		}
 		&--light {
 			color: #ffc61a;
 		}
@@ -84,23 +90,40 @@ section {
 }
 
 .menu {
+	position: relative;
+	@media only screen and (max-width: $md) {
+		position: fixed;
+		width: 100%;
+		margin-top: -75px;
+		padding: 20px 25px;
+		background: #000;
+		z-index: 100;
+	}
+	&__list {
+		@media only screen and (max-width: $md) {
+			display: none;
+			position: absolute;
+			top: 89px;
+			flex-direction: column;
+			width: 100%;
+			margin-left: -50px;
+			background: #000;
+		}
+	}
 	&__item {
 		padding: 4px 23px;
 		border-radius: 15px;
 		transition: 1s all;
 		cursor: pointer;
+		@media only screen and (max-width: $md) {
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
 		&:hover {
 			background-color: #ffc61a;
 			.menu__link {
 				color: #000;
 			}
-		}
-	}
-	&__item--active {
-		border-radius: 15px;
-		background-color: #ffc61a;
-		.menu__link {
-			color: #000;
 		}
 	}
 	&__link {
@@ -109,17 +132,43 @@ section {
 		text-decoration: none;
 		transition: 1s all;
 		color: #fff;
+		@media only screen and (max-width: $md) {
+			font-size: 20px;
+		}
 	}
+	&__icon {
+		display: none;
+		@media only screen and (max-width: $md) {
+			display: flex;
+		}
+	}
+	&.active {
+		border-radius: 15px;
+		background-color: #ffc61a;
+		.menu__link {
+			color: #000;
+		}
+	}
+}
+
+.sticky-menu {
+	position: fixed;
+	width: 100%;
+	margin-top: -75px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #000;
+	z-index: 100;
 }
 
 .logo {
 	letter-spacing: 0.54px;
-	line-height: 19px;
 	text-decoration: none;
 	color: #fff;
 	&__top {
 		font-size: 36px;
 		font-weight: 700;
+		line-height: 28px;
 		span {
 			text-transform: uppercase;
 			color: #daa505;
@@ -129,6 +178,7 @@ section {
 		margin-top: 10px;
 		font-size: 14px;
 		font-weight: 700;
+		line-height: 11px;
 		letter-spacing: 2.4px;
 		text-transform: uppercase;
 	}
@@ -432,11 +482,70 @@ section {
 	&__images {
 		margin-top: 67px;
 	}
+	&__img {
+		cursor: pointer;
+	}
 }
 
 .s-reviews {
 	background: url("../img/reviews-bg.jpg") no-repeat;
 	background-size: cover;
+	.reviews-slider {
+		margin-top: 105px;
+		max-width: 100%;
+		.slick-list {
+			.slick-track {
+				.slick-slide {
+					display: flex;
+					flex-direction: column;
+					//align-items: center;
+					max-width: 580px;
+					p {
+						max-width: 100%;
+					}
+				}
+			}
+		}
+	}
+	.reviews-slide {
+		margin-right: 30px;
+		padding: 50px 40px;
+		border-radius: 12px;
+		background-color: #040707;
+		@media only screen and (max-width: $md) {
+			margin-right: 0;
+		}
+		&__description {
+			margin-bottom: 25px;
+			font-family: 'Lato', sans-serif;
+			font-size: 18px;
+			font-weight: 400;
+			color: #ffffff;
+			@media only screen and (max-width: $md) {
+				text-align: center;
+			}
+		}
+	}
+	.feature {
+		@media only screen and (max-width: $md) {
+			justify-content: center;
+		}
+		&__img {
+			max-width: 74px;
+			height: auto;
+			margin-right: 50px;
+			img {
+				width: 100%;
+				border-radius: 50%;
+			}
+		}
+		&__text {
+			text-transform: uppercase;
+		}
+		&__description {
+			margin: 0;
+		}
+	}
 }
 
 .s-call {
@@ -450,9 +559,15 @@ section {
 	color: #000000;
 	&__slogan {
 		font-size: 35px;
+		@media only screen and (max-width: $sm) {
+			font-size: 17px;
+		}
 	}
 	&__telephone {
 		font-size: 77px;
+		@media only screen and (max-width: $sm) {
+			font-size: 36px;
+		}
 	}
 }
 
@@ -460,10 +575,16 @@ section {
 	padding-top: 75px;
 	padding-bottom: 15px;
 	background: #0d0900;
+	&__copy {
+		margin-top: 120px;
+	}
 }
 
 .footer-block {
 	flex-basis: 340px;
+	@media only screen and (max-width: $lg) {
+		margin-bottom: 50px;
+	}
 	&__title {
 		margin-bottom: 38px;
 		font-family: 'Lato', sans-serif;
@@ -497,10 +618,19 @@ section {
 	&__downloads {
 		align-self: flex-start;
 		margin-top: 35px;
+		@media only screen and (max-width: $md) {
+			align-self: center;
+		}
 	}
 	&__download {
 		flex: 0 0 auto;
 		margin-top: 15px;
+		cursor: pointer;
+		&:hover {
+			&>svg {
+				fill: #ffc61a;
+			}
+		}
 	}
 	&__download-link {
 		margin-right: 30px;
@@ -514,7 +644,7 @@ section {
 .contacts {
 	margin-top: 47px;
 	&__item {
-		margin-top: 40px;
+		margin-top: 30px;
 		font-family: 'Times New Roman PSMT', serif;
 		font-size: 18px;
 		font-weight: 400;
@@ -526,5 +656,16 @@ section {
 	}
 	&__text {
 		word-break: break-all;
+	}
+}
+
+.copy {
+	font-family: 'Times New Roman PSMT', serif;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	color: #fff;
+	@media only screen and (max-width: $md) {
+		margin-top: 10px;
 	}
 }

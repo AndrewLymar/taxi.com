@@ -10,7 +10,7 @@
 </head>
 
 <body>
-	<header class="header">
+	<header class="header" id="home">
 		<nav class="menu header__menu flex-row jc-center">
 			<div class="container flex-row jc-between">
 				<a href="" class="logo menu__logo">
@@ -22,30 +22,31 @@
 					</div>
 				</a>
 				<ul class="menu__list flex-row ai-center">
-					<li class="menu__item menu__item--active">
-						<a class="menu__link" href="#header">Home</a>
+					<li class="menu__item">
+						<a class="menu__link" href="#home">Home</a>
 					</li>
 					<li class="menu__item">
 						<a class="menu__link" href="#about">About</a>
 					</li>
 					<li class="menu__item">
-						<a class="menu__link" href="#expertise">Features</a>
+						<a class="menu__link" href="#tariffs">Tariffs</a>
 					</li>
 					<li class="menu__item">
-						<a class="menu__link" href="#team">Blog</a>
+						<a class="menu__link" href="#features">Features</a>
 					</li>
 					<li class="menu__item">
-						<a class="menu__link" href="#works">Order Now</a>
+						<a class="menu__link" href="#download">Order Now</a>
 					</li>
 					<li class="menu__item">
-						<a class="menu__link" href="#reviews">Contacts</a>
+						<a class="menu__link" href="#reviews">Reviews</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#contacts">Contacts</a>
 					</li>
 				</ul>
-				<!--
-				<svg width="32" height="32" fill="#fff" class="menu__icon">
+				<svg width="48" height="48" fill="#ffc61a" class="menu__icon">
 					<use xlink:href="img/sprite.svg#menu"></use>
 				</svg>
-				-->
 			</div>
 		</nav>
 		<div class="container">
@@ -57,7 +58,7 @@
 			</div>
 		</div>
 	</header>
-	<section class="s-book-now">
+	<section class="s-book-now" id="about">
 		<div class="container flex-row jc-between jc-center-lg gap-full">
 			<div class="about">
 				<div class="about__text ta-center-lg">
@@ -90,7 +91,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="s-tariffs">
+	<section class="s-tariffs" id="tariffs">
 		<div class="container flex-col jc-center ta-center">
 			<div class="section-text">
 				<div class="section-text__subtitle section-text__subtitle--light">Our</div>
@@ -133,7 +134,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="s-features">
+	<section class="s-features" id="features">
 		<div class="container flex-col jc-center">
 			<div class="section-text ta-center">
 				<div class="section-text__subtitle section-text__subtitle--light">We Do Best</div>
@@ -187,7 +188,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="s-download">
+	<section class="s-download" id="download">
 		<div class="container flex-col jc-center">
 			<div class="section-text ta-center">
 				<div class="section-text__subtitle section-text__subtitle--light">Download</div>
@@ -210,11 +211,69 @@
 			</div>
 		</div>
 	</section>
-	<section class="s-reviews">
+	<section class="s-reviews" id="reviews">
 		<div class="container flex-col jc-center">
 			<div class="section-text ta-center">
 				<div class="section-text__subtitle section-text__subtitle--light">Happy Client's</div>
 				<h2 class="section-text__title section-text__title--light">Testimonials</h2>
+			</div>
+			<div class="reviews-slider flex-row jc-between">
+				<div class="reviews-slide">
+					<div class="reviews-slide__description">
+						Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.Quisque sollicitudin feugiat risus.
+					</div>
+					<div class="reviews-slide__feature feature flex-row ai-center">
+						<div class="feature__img flex-row centered">
+							<img src="img/user1.jpg" alt="user">
+						</div>
+						<div class="feature__text ta-center-sm">
+							<h3 class="feature__title">Chan</h3>
+							<p class="feature__description">Designer</p>
+						</div>
+					</div>
+				</div>
+				<div class="reviews-slide">
+					<div class="reviews-slide__description">
+						Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.Quisque sollicitudin feugiat risus.
+					</div>
+					<div class="reviews-slide__feature feature flex-row ai-center">
+						<div class="feature__img flex-row centered">
+							<img src="img/user2.jpg" alt="user">
+						</div>
+						<div class="feature__text ta-center-sm">
+							<h3 class="feature__title">Jack</h3>
+							<p class="feature__description">Developer</p>
+						</div>
+					</div>
+				</div>
+				<div class="reviews-slide">
+					<div class="reviews-slide__description">
+						Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.Quisque sollicitudin feugiat risus.
+					</div>
+					<div class="reviews-slide__feature feature flex-row ai-center">
+						<div class="feature__img flex-row centered">
+							<img src="img/user3.jpg" alt="user">
+						</div>
+						<div class="feature__text ta-center-sm">
+							<h3 class="feature__title">John</h3>
+							<p class="feature__description">Manager</p>
+						</div>
+					</div>
+				</div>
+				<div class="reviews-slide">
+					<div class="reviews-slide__description">
+						Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.Quisque sollicitudin feugiat risus.
+					</div>
+					<div class="reviews-slide__feature feature flex-row ai-center">
+						<div class="feature__img flex-row centered">
+							<img src="img/user4.jpg" alt="user">
+						</div>
+						<div class="feature__text ta-center-sm">
+							<h3 class="feature__title">Lara</h3>
+							<p class="feature__description">Engineer</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -228,86 +287,105 @@
 					+123 4567 8900
 				</div>
 			</div>
-
 		</div>
 	</section>
-	<footer class="footer">
-		<div class="container flex-row jc-between jc-center-md gap-full">
-			<div class="footer-block footer__block jc-center-md">
-				<div class="footer-block__title ta-center-md">About cab Hub</div>
-				<div class="footer-block__divider"></div>
-				<div class="footer-block__description ta-center-md">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.Quisque sollicitudin feugiat risus, eu posuere ex euismod eu.</div>
-				<div class="footer-block__socials flex-row jc-center-md ai-center">
-					<a href="" class="footer-block__social">
-						<svg width="11" height="20" fill="#ffc61a">
+	<footer class="footer" id="contacts">
+		<div class="container flex-col ai-center">
+			<div class="flex-row jc-between jc-around-lg jc-center-md gap-full">
+				<div class="footer-block footer__block jc-center-md">
+					<div class="footer-block__title ta-center-md">About cab Hub</div>
+					<div class="footer-block__divider"></div>
+					<div class="footer-block__description ta-center-md">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.Quisque sollicitudin feugiat risus, eu posuere ex euismod eu.</div>
+					<div class="footer-block__socials flex-row jc-center-md ai-center">
+						<a href="" class="footer-block__social">
+							<svg width="11" height="20" fill="#ffc61a">
 							<use xlink:href="img/sprite.svg#facebook-f-brands"></use>
 						</svg>
-					</a>
-					<a href="" class="footer-block__social">
-						<svg width="25" height="18" fill="#ffc61a">
+						</a>
+						<a href="" class="footer-block__social">
+							<svg width="25" height="18" fill="#ffc61a">
 							<use xlink:href="img/sprite.svg#google-plus-g-brands"></use>
 						</svg>
-					</a>
-					<a href="" class="footer-block__social">
-						<svg width="18" height="15" fill="#ffc61a">
+						</a>
+						<a href="" class="footer-block__social">
+							<svg width="18" height="15" fill="#ffc61a">
 							<use xlink:href="img/sprite.svg#twitter-brands"></use>
 						</svg>
-					</a>
-					<a href="" class="footer-block__social">
-						<svg width="17" height="18" fill="#ffc61a">
+						</a>
+						<a href="" class="footer-block__social">
+							<svg width="17" height="18" fill="#ffc61a">
 							<use xlink:href="img/sprite.svg#instagram-brands"></use>
 						</svg>
-					</a>
+						</a>
+					</div>
 				</div>
-			</div>
-			<div class="footer-block footer__block flex-col ai-start">
-				<div class="footer-block__title ta-center-md">Download</div>
-				<div class="footer-block__divider"></div>
-				<div class="footer-block__description ta-center-md">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</div>
-				<div class="footer-block__downloads flex-col">
-					<div class="footer-block__download flex-row jc-between ai-center">
-						<a href="" class="footer-block__download-link">Android Users</a>
-						<svg width="24" height="28" fill="#fff">
+				<div class="footer-block footer__block flex-col ai-center-md">
+					<div class="footer-block__title ta-center-md">Download</div>
+					<div class="footer-block__divider"></div>
+					<div class="footer-block__description ta-center-md">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</div>
+					<div class="footer-block__downloads flex-col">
+						<div class="footer-block__download flex-row jc-between ai-center">
+							<a href="" class="footer-block__download-link">Android Users</a>
+							<svg width="24" height="28" fill="#fff">
 							<use xlink:href="img/sprite.svg#android-brands"></use>
 						</svg>
-					</div>
-					<div class="footer-block__download flex-row jc-between ai-center">
-						<a href="" class="footer-block__download-link">
+						</div>
+						<div class="footer-block__download flex-row jc-between ai-center">
+							<a href="" class="footer-block__download-link">
 						IOS Users	
 						</a>
-						<svg width="23" height="28" fill="#fff">
+							<svg width="23" height="28" fill="#fff">
 							<use xlink:href="img/sprite.svg#apple-brands"></use>
 						</svg>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="footer-block footer__block">
-				<div class="footer-block__title ta-center-md">Contact</div>
-				<div class="footer-block__divider"></div>
-				<div class="contacts">
-					<div class="contacts__item flex-row ai-center">
-						<div class="contacts__img flex-fow centered">
-							<svg width="15" height="21" fill="#fff">
+				<div class="footer-block footer__block">
+					<div class="footer-block__title ta-center-md">Contact</div>
+					<div class="footer-block__divider"></div>
+					<div class="contacts">
+						<div class="contacts__item flex-row ai-center">
+							<div class="contacts__img flex-row centered">
+								<svg width="15" height="21" fill="#fff">
 								<use xlink:href="img/sprite.svg#map-marker-alt-solid"></use>
 							</svg>
+							</div>
+							<div class="contacts__text">+123, Main Street, Your City </div>
 						</div>
-						<div class="contacts__text">+123, Main Street, Your City </div>
-					</div>
-					<div class="contacts__item flex-row ai-center">
-						<div class="contacts__img flex-fow centered">
-							<svg width="23" height="28" fill="#fff">
+						<div class="contacts__item flex-row ai-center">
+							<div class="contacts__img flex-row centered">
+								<svg width="11" height="18" fill="#fff">
 								<use xlink:href="img/sprite.svg#mobile-alt-solid"></use>
 							</svg>
+							</div>
+							<div class="contacts__text">+123 4567 8900</div>
 						</div>
-						<div class="contacts__text">+123 4567 8900</div>
+						<div class="contacts__item flex-row ai-center">
+							<div class="contacts__img flex-row centered">
+								<svg width="16" height="13" fill="#fff">
+								<use xlink:href="img/sprite.svg#envelope-solid"></use>
+							</svg>
+							</div>
+							<div class="contacts__text">freetaxi@gmail.com</div>
+						</div>
+						<div class="contacts__item flex-row ai-center">
+							<div class="contacts__img flex-row centered">
+								<svg width="11" height="18" fill="#fff">
+								<use xlink:href="img/sprite.svg#mouse-pointer-solid"></use>
+							</svg>
+							</div>
+							<div class="contacts__text">www.bookcabnow.com</div>
+						</div>
 					</div>
 				</div>
 			</div>
+			<div class="copy footer__copy">Copyright © 2019 www.bookcabnow.com</div>
 		</div>
 	</footer>
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/slick.css">
 	<script src="js/scripts.min.js"></script>
 </body>
 
