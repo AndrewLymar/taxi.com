@@ -119,6 +119,7 @@ section {
 			margin-top: 15px;
 			margin-bottom: 15px;
 		}
+		&.active,
 		&:hover {
 			background-color: #ffc61a;
 			.menu__link {
@@ -188,7 +189,7 @@ section {
 	position: relative;
 	margin-top: 135px;
 	@media only screen and (max-width: $sm) {
-		margin-top: 50px;
+		margin-top: 95px;
 	}
 	&__title {
 		margin-bottom: 30px;
@@ -232,7 +233,11 @@ section {
 	}
 	&__img {
 		position: absolute;
-		top: 260px;
+		top: 275px;
+		height: auto;
+		img {
+			width: 100%;
+		}
 		@media only screen and (max-width: $md) {
 			width: 90%;
 		}
@@ -362,8 +367,8 @@ section {
 	}
 	&__img {
 		position: absolute;
-		top: -95px;
-		width: 90%;
+		top: -90px;
+		width: 85%;
 		height: auto;
 		img {
 			width: 100%;

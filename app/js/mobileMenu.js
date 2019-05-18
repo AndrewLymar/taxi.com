@@ -19,16 +19,13 @@
 		var menuIsOpened = false;
 		var offset = 0;
 		var scrollPos = 0;
+		var isFirstScroll = true;
 
 		if (documentWidth >= options.mobileResolution) {
 			if (options.menuType == "sticky") {
-				$menu.addClass("sticky-menu");
 				currentMenuHeight = $menu.outerHeight() * 2;
 				menuHeightFixed = currentMenuHeight;
 				offset = currentMenuHeight;
-				setTimeout(function () {
-					$menu.removeClass("sticky-menu");
-				}, 1)
 			}
 			if (options.menuType == "fixed") {
 				currentMenuHeight = $menu.outerHeight();
@@ -38,6 +35,9 @@
 				currentMenuHeight = $menu.outerHeight();
 				offset = currentMenuHeight;
 			}
+		} else {
+			currentMenuHeight = $menu.outerHeight();
+			offset = currentMenuHeight;
 		}
 
 		$(window).on("resize", onResizeChangeState);
@@ -83,11 +83,12 @@
 			$menuLinks.each(function () {
 				var currLink = $(this);
 				var refElement = $(currLink.attr("href"));
+				console.log(offset);
 				if (refElement.position().top <= scrollPos + offset && refElement.position().top + refElement.height() > scrollPos) {
 					$menuLinks.removeClass("active");
+					$menuLinks.parent().removeClass("active");
 					currLink.addClass("active");
-				} else {
-					currLink.removeClass("active");
+					currLink.parent().addClass("active");
 				}
 			});
 		}
@@ -101,8 +102,10 @@
 			}
 			$menuLinks.each(function () {
 				$(this).removeClass("active");
+				$(this).parent().removeClass("active");
 			})
 			$(this).addClass("active");
+			$(this).parent().addClass("active");
 
 			$("html, body").stop().animate({
 				'scrollTop': $target.offset().top - offset
@@ -114,8 +117,8 @@
 				$menu.addClass("sticky-menu");
 				currentMenuHeight = $menu.outerHeight();
 			} else {
+				currentMenuHeight = $menu.outerHeight();
 				$menu.removeClass("sticky-menu");
-				currentMenuHeight = menuHeightFixed;
 			}
 			offset = currentMenuHeight;
 		}

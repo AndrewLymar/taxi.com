@@ -72,6 +72,7 @@ gulp.task('css', function () {
 gulp.task('watch', ['sass', 'js', 'browser-sync'], function () {
 	gulp.watch('app/scss/**/*.scss', ['sass']);
 	gulp.watch(['app/js/common.js'], ['js']);
+	gulp.watch(['app/js/mobileMenu.js'], ['js']);
 	gulp.watch('app/*.html', browserSync.reload);
 });
 
