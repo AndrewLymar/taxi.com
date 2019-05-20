@@ -115,6 +115,9 @@ section {
 		border-radius: 15px;
 		transition: 1s all;
 		cursor: pointer;
+		@media only screen and (max-width: $lg) {
+			padding: 4px 10px;
+		}
 		@media only screen and (max-width: $md) {
 			margin-top: 15px;
 			margin-bottom: 15px;

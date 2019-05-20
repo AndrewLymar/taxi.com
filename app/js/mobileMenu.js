@@ -83,7 +83,6 @@
 			$menuLinks.each(function () {
 				var currLink = $(this);
 				var refElement = $(currLink.attr("href"));
-				console.log(offset);
 				if (refElement.position().top <= scrollPos + offset && refElement.position().top + refElement.height() > scrollPos) {
 					$menuLinks.removeClass("active");
 					$menuLinks.parent().removeClass("active");
