@@ -72,6 +72,7 @@
 
 		function onScroll(event) {
 			scrollPos = $(document).scrollTop();
+			var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
 			if (documentWidth >= options.mobileResolution) {
 				if (options.menuType == "sticky") {
 					fixedMenu();
@@ -90,6 +91,12 @@
 					currLink.parent().addClass("active");
 				}
 			});
+			if (scrollBottom <= 50) {
+				$menuLinks.removeClass("active");
+				$menuLinks.parent().removeClass("active");
+				$menuLinks.last().addClass("active");
+				$menuLinks.last().parent().addClass("active");
+			}
 		}
 
 		function scrollTo(event) {

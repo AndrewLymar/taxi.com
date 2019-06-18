@@ -1591,6 +1591,7 @@ section {
 
 .banner__title {
   margin-bottom: 30px;
+  text-align: center;
   font-family: Lato,sans-serif;
   font-size: 32px;
   font-weight: 900;
@@ -1601,6 +1602,7 @@ section {
 
 .banner__telephone {
   margin-bottom: 30px;
+  text-align: center;
   font-family: Lato,sans-serif;
   font-size: 68px;
   font-weight: 900;
@@ -1623,6 +1625,7 @@ section {
 
 .banner__domain {
   margin-bottom: 30px;
+  text-align: center;
   font-family: Montserrat,sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -1647,7 +1650,13 @@ section {
 .banner__img {
   position: absolute;
   top: 275px;
+  left: 50%;
+  width: 100%;
+  max-width: 826px;
   height: auto;
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0);
 }
 
 .banner__img img {
@@ -1823,6 +1832,7 @@ section {
 }
 
 .card {
+  width: 100%;
   position: relative;
   width: 360px;
   padding: 115px 35px 25px 35px;
@@ -1844,8 +1854,13 @@ section {
 .card__img {
   position: absolute;
   top: -90px;
-  width: 85%;
+  left: 50%;
+  width: 100%;
+  max-width: 289px;
   height: auto;
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0);
 }
 
 .card__img img {
